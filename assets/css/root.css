@@ -1,0 +1,60 @@
+:root{
+    /* font size */
+    --fs-sm:10px;
+    --fs-sm-1:12px;
+    --fs-md:14px;
+    --fs-md-1:17px;
+    --fs-lg:18px;
+    --fs-lg-1:24px;
+    --fs-xl:30px;
+    --fs-xl-1:40px;
+    --fs-xxl:44px;
+    --fs-xxl-1:48px;
+
+    /* colors */
+    --black:#1E1E1E;
+    --grey-C4:#C4C4C4;
+    --light-white:#F7F7F7;
+    --skin:#FEEFB7;
+    --yellow4d:#FAD94D;
+    --greyA5:#A5A5A5;
+    --yellow10:#fACA10;
+
+    /* font-weight */
+    --fw-900:900
+}
+/* font size */
+.fs-sm{
+    font-size: var(--fs-sm);
+}
+.fs-sm-1{
+    font-size: var(--fs-sm-1);
+}
+.fs-md{
+    font-size: var(--fs-md);
+}
+.fs-md-1{
+    font-size: var(--fs-md-1);
+}
+.fs-lg{
+    font-size: var(--fs-lg);
+}
+.fs-lg-1{
+    font-size: var(--fs-lg-1);
+}
+.fs-xl{
+    font-size: var(--fs-xl);
+}
+.fs-xl-1{
+    font-size: var(--fs-xl-1);
+}
+.fs-xxl{
+    font-size: var(--fs-xxl);
+}
+.fs-xx-1{
+    font-size: var(--fs-xxl-1);
+}
+/* font weight */
+.fw-900{
+    font-weight: var(--fw-900);
+}
