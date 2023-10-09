@@ -19,8 +19,8 @@
     --yellow4d:#FAD94D;
     --greyA5:#A5A5A5;
     --yellow10:#fACA10;
+    --yellow4f:#fcdb4f;
     --whiteF2:#f2f2f2;
-
 
     /* font-weight */
     --fw-900:900
@@ -53,7 +53,7 @@
 .fs-xxl{
     font-size: var(--fs-xxl);
 }
-.fs-xx-1{
+.fs-xxl-1{
     font-size: var(--fs-xxl-1);
 }
 /* font weight */
@@ -92,5 +92,8 @@
     background-color: var(--whiteF2);
 }
 .bg-whitef7{
-    background-color: var(--whiteF7);
+    background-color: var(--light-white);
+}
+.bg_black{
+    background-color: var(--black);
 }
