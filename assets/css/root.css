@@ -19,6 +19,8 @@
     --yellow4d:#FAD94D;
     --greyA5:#A5A5A5;
     --yellow10:#fACA10;
+    --whiteF2:#f2f2f2;
+
 
     /* font-weight */
     --fw-900:900
@@ -57,4 +59,38 @@
 /* font weight */
 .fw-900{
     font-weight: var(--fw-900);
+}
+/* colors */
+.text_black{
+    color: var(--black);
+}
+.text_greyC4{
+    color: var(--grey-C4);
+}
+.text_greyA5{
+    color: var(--greyA5);
+}
+.text_yellow10{
+    color: var(--yellow10);
+}
+.text_yellow4D{
+    color: var(--yellow4d);
+}
+.text_lght-white{
+    color: var(--skin);
+}
+.text_whiteF2{
+    color: var(--whiteF2);
+}
+.text_skin{
+    color: var(--skin);
+}
+.bg-yellow10{
+    background-color: var(--yellow10);
+}
+.bg-whitef2{
+    background-color: var(--whiteF2);
+}
+.bg-whitef7{
+    background-color: var(--whiteF7);
 }
