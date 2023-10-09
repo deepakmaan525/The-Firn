@@ -94,3 +94,6 @@
 .bg-whitef7{
     background-color: var(--light-white);
 }
+.bg_black{
+    background-color: var(--black);
+}
