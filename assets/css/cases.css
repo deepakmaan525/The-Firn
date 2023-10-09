@@ -10,3 +10,73 @@
 .my-container{
     max-width: 1280px;
 }
+ 
+/* button */
+.btn-get{
+        padding: 12px 21px;
+        border-radius: 5px;
+        border: none;
+}
+.btn-read {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* latter spacing */
+
+.ls_88{
+    letter-spacing: 0.88px;
+}
+.ls_36{
+    letter-spacing: 0.36px;
+}
+.ls_34{
+    letter-spacing: 0.34px;
+}
+.ls_9{
+    letter-spacing: 0.9px;
+}
+
+/* line hight */
+
+.lh_13{
+    line-height: 133.4%;
+}
+.lh_17{
+    line-height: 176%;
+}
+
+/* line */
+
+.cases-line::after {  
+    display: flex;
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  bottom: 8px;
+  height: 6px;
+  width: 100%;
+  background: #fACA10;
+}
+.card-line::after {  
+    display: flex;
+  content: "";
+  position: absolute;
+  left: 27px;
+  bottom: 8px;
+  height: 1px;
+  width: 324px;
+  background: #fACA10;
+}
+
+/* card */
+
+.cases-card{
+    border-radius: 15px;
+border: 1px solid rgba(250, 202, 16, 0.40);
+background: #FFF;
+box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.09);
+
+}
