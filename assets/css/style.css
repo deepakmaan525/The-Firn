@@ -6,3 +6,6 @@
     list-style-type: none !important;
     text-decoration: none !important;
 }
+.my-container{
+    max-width: 1280px !important;
+}
