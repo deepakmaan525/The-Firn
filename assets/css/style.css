@@ -46,3 +46,26 @@
 .mxw-220{
     max-width: 220px;
 }
+
+/*---------------------------- digital-journey-page----------------------------- */
+.text-shadow-4{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.mxw-430{
+    max-width: 430px;
+}
+/* get in touch card */
+.touch-card{
+    max-width: 936px;
+    border-radius: 15px;
+    box-shadow: 0px 19px 34px 14px rgba(0, 0, 0, 0.06);
+}
+input{
+    outline: unset !important;
+    border: unset ;
+}
+textarea{
+    border: unset;
+    outline: unset;
+    resize: none !important;
+}

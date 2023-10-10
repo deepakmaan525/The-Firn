@@ -18,6 +18,7 @@
     --skin:#FEEFB7;
     --yellow4d:#FAD94D;
     --greyA5:#A5A5A5;
+    --greyB0:#B0B0B0;
     --yellow10:#fACA10;
     --yellow4f:#fcdb4f;
     --whiteF2:#f2f2f2;
@@ -69,6 +70,9 @@
 }
 .text_greyA5{
     color: var(--greyA5);
+}
+.text_greyB0{
+    color: var(--greyB0);
 }
 .text_yellow10{
     color: var(--yellow10);
