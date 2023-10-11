@@ -26,6 +26,7 @@ transition: .4s;
         border-radius: 5px;
         border: none;
         transition: .4s;
+        max-width: 181px;
 }
 .btn-get:hover{
        background-color: var(--black);
@@ -91,8 +92,20 @@ transition: .4s;
   left: 0;
   z-index: -1;
   bottom: 4px;
-  height: 6px;
-  width: 47px;
+  height: 4px;
+  width: 100%;
+  transition: .5s;
+  background: var(--yellow4f);
+}
+.nav-line::after {  
+    display: flex;
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  bottom: 4px;
+  height: 4px;
+  width: 100%;
   transition: .5s;
   background: var(--yellow4f);
 }
@@ -221,10 +234,7 @@ ul {
     overflow: hidden;
 }  
 
-/* padding */
-.pt-100{
-    padding-top: 100px;
-}
+
 
 @media (max-width:992px) {
     label[id="menuIcon"] {
@@ -268,3 +278,4 @@ ul {
         left: 0;
     }
 }
+

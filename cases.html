@@ -12,7 +12,7 @@
 
 <body class="sec-flow">
   <!-- nav-section -->
-  <nav class="pt-4 pb-3 bg-whitef7">
+  <nav class="pt-4 pb-3 bg-whitef7 z-n1">
     <div class="container my-container">
       <div class="d-flex align-items-center justify-content-between position-relative">
         <div>
@@ -23,11 +23,11 @@
           <span class="cross-5"></span>
           <span class="cross-6"></span>
         </label>
-        <ul class="d-flex align-items-center justify-content-center gap-4 mb-0 nav-box" id="nav-bar">
+        <ul class="d-flex align-items-center justify-content-center gap-4 mb-0 nav-box z-1" id="nav-bar">
           <li><a class="home fs-lg fw-bold text_black ls-9" href="#home">Home</a></li>
           <li><a class="solution fs-lg fw-bold text_black ls-9" href="#solution">Solutions
             </a></li>
-          <li><a class="cases fs-lg fw-bold text_black ls-9 " href="#cases">Cases</a></li>
+          <li><a class="cases fs-lg fw-bold text_black ls-9 position-relative nav-line" href="#cases">Cases</a></li>
           <li><a class="about fs-lg fw-bold text_black ls-9 " href="#about">About Us</a></li>
           <li><a class="blog fs-lg fw-bold text_black ls-9" href="#blog">BLOG</a>
           </li>
@@ -41,15 +41,15 @@
   <!-- our research -->
   <section class="bg-whitef7 pb-5">
     <div class="container my-container">
-      <div class="row">
-        <div class="col-lg-5 col-md-6 col-sm-12">
-          <h1 class="fs-xxl fw-900 text_black ff-Nunito lh_13 ls_88 pt-100">Our Research & Case Studies</h1>
-          <p class="fs-lg fw-normal text_black ff-lora lh_17 ls_36">Lorem Ipsum is simply dummy text of the printing and
+      <div class="row flex-column-reverse flex-lg-row">
+        <div class="col-lg-5  col-sm-12 d-flex flex-column justify-content-center">
+          <h1 class="fs-xxl fw-900 text_black ff-Nunito lh_13 ls_88 p-0 m-0">Our Research & Case Studies</h1>
+          <p class="fs-lg fw-normal text_black ff-lora lh_17 ls_36 p-0 m-0 pt-4">Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been
             the industry's standard dummy.</p>
-          <button class="fs-lg fw-bold text-white ff-Nunito btn-get bg-yellow10 ls_9">Get in Touch</button>
+          <button class="fs-lg fw-bold text-white ff-Nunito btn-get bg-yellow10 ls_9 mt-4">Get in Touch</button>
         </div>
-        <div class="col-lg-7 col-md-6 col-sm-12 pt-lg-0 pt-4">
+        <div class="col-lg-7  col-sm-12 pt-lg-0 pt-4">
           <img src="./assets/images/sec-img.png" alt="sec-img" class="w-100">
         </div>
       </div>
@@ -58,24 +58,29 @@
   <!-- our cases -->
   <section>
     <div class="container my-container ">
-      <h2 class="fs-xxl fw-900 text_black ff-Nunito ls_88 text-center pt-5">Our <span
+      <h2 class="fs-xxl fw-900 text_black ff-Nunito ls_88 text-center pt-sm-5 pt-3">Our <span
           class="position-relative cases-line">Cases</span> </h2>
-      <div class="d-flex gap-5 pt-5 flex-wrap">
-          <button class="position-relative after-line-button fs-lg fw-bold ls_9 ms-5 text_greyA5">Show All</button>
+      <div class="d-flex gap-sm-5 gap-3 pt-sm-5 pt-3 flex-wrap">
+        <button class="position-relative after-line-button fs-lg fw-bold ls_9 ms-5 text_greyA5">Show All</button>
         <button class="position-relative after-line-button fs-lg fw-bold ls_9 ms-5 text_greyA5">Coaching</button>
-        <button class="position-relative after-line-button fs-lg fw-bold ls_9 ms-5 text_greyA5">Digital Partners</button>
+        <button class="position-relative after-line-button fs-lg fw-bold ls_9 ms-5 text_greyA5">Digital
+          Partners</button>
         <button class="position-relative after-line-button px-5 fs-lg fw-bold ls_9 ms-5 text_greyA5">SEO</button>
-        <span class="position-relative">
+        <div class="position-relative">
           <input type="search" class="input-search text_greyA5 pb-2 pt-3 " placeholder="Search" id="search">
-          <div class="position-searchbar bg-white p-1" id="svg"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <g clip-path="url(#clip0_3307_2900)">
-            <path d="M19.7556 18.5773L14.0682 12.8899C15.1699 11.5291 15.8332 9.7999 15.8332 7.9166C15.8332 3.55164 12.2815 0 7.91656 0C3.55161 0 0 3.55161 0 7.91656C0 12.2815 3.55164 15.8332 7.9166 15.8332C9.7999 15.8332 11.5291 15.1699 12.8899 14.0682L18.5773 19.7556C18.7398 19.9181 18.9531 19.9998 19.1665 19.9998C19.3798 19.9998 19.5932 19.9181 19.7557 19.7556C20.0815 19.4298 20.0815 18.9031 19.7556 18.5773ZM7.9166 14.1665C4.46996 14.1665 1.66666 11.3632 1.66666 7.91656C1.66666 4.46992 4.46996 1.66662 7.9166 1.66662C11.3632 1.66662 14.1665 4.46992 14.1665 7.91656C14.1665 11.3632 11.3632 14.1665 7.9166 14.1665Z" fill="#C4C4C4"/>
-            </g>
-            </svg></div>
-                </div>
-        </span>
+          <div class="position-searchbar bg-white p-1" id="svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_3307_2900)">
+                <path
+                  d="M19.7556 18.5773L14.0682 12.8899C15.1699 11.5291 15.8332 9.7999 15.8332 7.9166C15.8332 3.55164 12.2815 0 7.91656 0C3.55161 0 0 3.55161 0 7.91656C0 12.2815 3.55164 15.8332 7.9166 15.8332C9.7999 15.8332 11.5291 15.1699 12.8899 14.0682L18.5773 19.7556C18.7398 19.9181 18.9531 19.9998 19.1665 19.9998C19.3798 19.9998 19.5932 19.9181 19.7557 19.7556C20.0815 19.4298 20.0815 18.9031 19.7556 18.5773ZM7.9166 14.1665C4.46996 14.1665 1.66666 11.3632 1.66666 7.91656C1.66666 4.46992 4.46996 1.66662 7.9166 1.66662C11.3632 1.66662 14.1665 4.46992 14.1665 7.91656C14.1665 11.3632 11.3632 14.1665 7.9166 14.1665Z"
+                  fill="#C4C4C4" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card  position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/group-descation.png" alt="group-descation">
             <div class="px-4">
@@ -88,9 +93,9 @@
                   More</button>
               </div>
             </div>
-          </div>  
+          </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/tea-with-laptop.png" alt="tea-with-laptop">
             <div class="px-4">
@@ -105,7 +110,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/work-on-laptop.png" alt="work-on-laptop">
             <div class="px-4">
@@ -120,7 +125,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/man-women.png" alt="man-women">
             <div class="px-4">
@@ -135,7 +140,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/laptop.png" alt="laptop">
             <div class="px-4">
@@ -150,7 +155,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/buildings.png" alt="buildings">
             <div class="px-4">
@@ -165,7 +170,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/teach-on-whiteboard.png" alt="teaching-on">
             <div class="px-4">
@@ -180,7 +185,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/animation-laptop.png" alt="animation-laptop">
             <div class="px-4">
@@ -195,7 +200,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/teaching.png" alt="teaching">
             <div class="px-4">
@@ -211,7 +216,7 @@
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center pt-5">
+      <div class="d-flex justify-content-center pt-sm-5 pt-3">
         <button class="fs-lg fw-bold text-white ff-Nunito btn-get bg-yellow10 ls_9">Load More</button>
       </div>
     </div>
@@ -219,18 +224,18 @@
   <!-- footer -->
   <footer>
     <div class="container my-container">
-      <div class="d-flex justify-content-center pt-5 ">
+      <div class="d-flex justify-content-center pt-sm-5 pt-3 ">
         <img src="./assets/images/footer-img.svg" alt="footer-img">
       </div>
-      <div class="d-flex justify-content-center gap-5 pt-5 flex-wrap">
-        <p class="fs-lg fw-bold text_black ls_9 position-relative footer-line">Home</p>
-        <p class="fs-lg fw-bold text_black ls_9 ">Solutions</p>
-        <p class="fs-lg fw-bold text_black ls_9">Cases</p>
-        <p class="fs-lg fw-bold text_black ls_9">About Us</p>
-        <p class="fs-lg fw-bold text_black ls_9">Blog</p>
-        <p class="fs-lg fw-bold text_black ls_9">Contact Us</p>
+      <div class="d-flex justify-content-center gap-sm-5 gap-3 pt-sm-5 pt-3 flex-wrap">
+        <a href=""class="fs-lg fw-bold text_black ls_9  p-0 m-0">Home</a>
+        <a href="" class="fs-lg fw-bold text_black ls_9 p-0 m-0">Solutions</a>
+        <a href="" class="fs-lg fw-bold text_black ls_9 p-0 m-0 position-relative footer-line">Cases</a>
+        <a href="" class="fs-lg fw-bold text_black ls_9 p-0 m-0">About Us</a>
+        <a href="" class="fs-lg fw-bold text_black ls_9 p-0 m-0">Blog</a>
+        <a href="" class="fs-lg fw-bold text_black ls_9 p-0 m-0">Contact Us</a>
       </div>
-      <ul class="d-flex justify-content-center gap-5 align-items-center pt-5 flex-wrap">
+      <ul class="d-flex justify-content-center gap-5 align-items-center pt-sm-5 pt-3 flex-wrap">
         <li><a href="https://www.facebook.com/" target="_blank"><svg width="10" height="20" viewBox="0 0 10 20"
               fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -273,8 +278,9 @@
             </svg>
           </a></li>
       </ul>
-      <p class="fs-sm-1 fw-normal ff-nunito greyA5 ls_3 text-center pt-5">Copyrights ©2020 Thefirm. All Right Reserved
+      <p class="fs-sm-1 fw-normal ff-nunito greyA5 ls_3 text-center pt-sm-5 pt-3">Copyrights ©2020 Thefirm. All Right Reserved
       </p>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
