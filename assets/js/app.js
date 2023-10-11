@@ -72,3 +72,16 @@ touch.addEventListener("click", function () {
     cross5.classList.toggle("cross-2");
     cross6.classList.toggle("cross-3");
 });
+
+
+
+
+let svg = document.getElementById('svg')
+let search = document.getElementById('search')
+
+if (search.value == "" ){
+    svg.classList.add.display = 'none'
+}
+else{
+    svg.classList.add.display = 'block'
+};
