@@ -1,19 +1,22 @@
 @import url("./root.css");
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style-type: none !important;
     text-decoration: none !important;
 }
-.my-container{
+
+.my-container {
     max-width: 1280px !important;
 }
+
 /* section 1 */
-.bottom-line::after{
+.bottom-line::after {
     content: '';
     display: flex;
-    width: 127.24px;
+    width: 100%;
     height: 4px;
     flex-shrink: 0;
     background-color: var(--yellow4d);
@@ -22,50 +25,101 @@
     left: 0;
     z-index: -1;
 }
-.z-1{
+
+.z-1 {
     z-index: 1;
 }
-.circle{    
+
+.circle {
     position: absolute;
     left: -40px;
     bottom: 17px;
     z-index: -1;
 }
-.digital-btn{
+
+.digital-btn {
     border-radius: 5px;
     box-shadow: 0px 10px 40px -12px rgba(30, 30, 30, 0.35);
     padding: 9px 14px;
     border: none;
 }
-.coaching-btn{
+
+.coaching-btn {
     border-radius: 5px;
     box-shadow: 0px 10px 40px -12px rgba(30, 30, 30, 0.35);
     padding: 9px 14px;
     border: none;
 }
-.mxw-220{
+
+.mxw-220 {
     max-width: 220px;
 }
 
 /*---------------------------- digital-journey-page----------------------------- */
-.text-shadow-4{
+.text-shadow-4 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.mxw-430{
+
+.mxw-430 {
     max-width: 430px;
 }
+
 /* get in touch card */
-.touch-card{
+.touch-card {
+    min-width: 920px;
+    padding-left: 80px;
+    padding-right: 75px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     max-width: 936px;
     border-radius: 15px;
     box-shadow: 0px 19px 34px 14px rgba(0, 0, 0, 0.06);
+
 }
-input{
+
+input {
     outline: unset !important;
-    border: unset ;
+    border: unset;
 }
-textarea{
+
+textarea {
     border: unset;
     outline: unset;
     resize: none !important;
+}
+
+.input-line {
+    border-bottom: 2px solid var(--greyA5);
+}
+
+.submit-btn {
+    border: none;
+    padding: 12px 46px;
+    border-radius: 5px;
+}
+.touch-card-position{
+    position: absolute;
+    bottom: -30%;
+}
+
+
+/* footer */
+footer div ul li a>svg path {
+    transition: all 200ms linear;
+}
+
+footer div ul li a:hover>svg path {
+    fill: #fACA10;
+}
+.footer-line::after {  
+    display: flex;
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  bottom: 4px;
+  height: 6px;
+  width: 47px;
+  transition: .5s;
+  background: #fcdb4f;
 }
