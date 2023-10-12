@@ -57,6 +57,18 @@
     max-width: 430px;
 }
 /* nav-bar */
+.nav-line::after {  
+    display: flex;
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  bottom: 4px;
+  height: 4px;
+  width: 100%;
+  transition: .5s;
+  background: var(--yellow4f);
+}
 .nav-get-btn {
     border-radius: 5px;
     box-shadow: 0px 10px 40px -12px rgba(250, 202, 16, 0.35);
