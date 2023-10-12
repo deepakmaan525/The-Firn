@@ -6,14 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>cases page</title>
   <link rel="stylesheet" href="./assets/css/cases.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="sec-flow">
@@ -45,25 +47,25 @@
     </div>
   </nav>
   <!-- our research -->
-  <section class="bg-whitef7 pb-5">
+  <section class="bg-whitef7 pb-5 overflow-hidden">
     <div class="container my-container">
       <div class="row flex-column-reverse flex-lg-row">
-        <div class="col-lg-5  col-sm-12 d-flex flex-column justify-content-center">
-          <h1 class="fs-xxl fw-900 text_black ff-Nunito lh_13 ls_88 p-0 m-0">Our Research & Case Studies</h1>
+        <div data-aos="zoom-in"class="col-lg-5  col-sm-12 d-flex flex-column justify-content-center">
+          <h1 class="fs-xxl fw-900 text_black ff-Nunito lh_13 ls_88 p-0 m-0 mw-437">Our Research & Case Studies</h1>
           <p class="fs-lg fw-normal text_black ff-lora lh_17 ls_36 p-0 m-0 pt-4">Lorem Ipsum is simply dummy text of the
             printing and
             typesetting industry. Lorem Ipsum has been
             the industry's standard dummy.</p>
           <button class="fs-lg fw-bold text-white ff-Nunito btn-get bg-yellow10 ls_9 mt-4">Get in Touch</button>
         </div>
-        <div class="col-lg-7  col-sm-12 pt-lg-0 pt-4">
+        <div data-aos="zoom-out" class="col-lg-7  col-sm-12 pt-lg-0 pt-4">
           <img src="./assets/images/sec-img.png" alt="sec-img" class="w-100">
         </div>
       </div>
     </div>
   </section>
   <!-- our cases -->
-  <section>
+  <section class="overflow-hidden">
     <div class="container my-container ">
       <h2 class="fs-xxl fw-900 text_black ff-Nunito ls_88 text-center pt-sm-5 pt-3">Our <span
           class="position-relative cases-line">Cases</span> </h2>
@@ -90,7 +92,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
+        <div data-aos="zoom-in-right" class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card  position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/group-descation.png" alt="group-descation">
             <div class="px-4">
@@ -105,7 +107,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
+        <div data-aos="zoom-in-left" class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/tea-with-laptop.png" alt="tea-with-laptop">
             <div class="px-4">
@@ -120,7 +122,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
+        <div data-aos="zoom-in-right" class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/work-on-laptop.png" alt="work-on-laptop">
             <div class="px-4">
@@ -135,7 +137,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
+        <div data-aos="zoom-in-left" class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/man-women.png" alt="man-women">
             <div class="px-4">
@@ -150,7 +152,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
+        <div data-aos="zoom-in-right" class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/laptop.png" alt="laptop">
             <div class="px-4">
@@ -165,7 +167,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
+        <div data-aos="zoom-in-left" class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/buildings.png" alt="buildings">
             <div class="px-4">
@@ -180,7 +182,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
+        <div data-aos="zoom-in-right" class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/teach-on-whiteboard.png" alt="teaching-on">
             <div class="px-4">
@@ -195,7 +197,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
+        <div data-aos="zoom-in-left" class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/animation-laptop.png" alt="animation-laptop">
             <div class="px-4">
@@ -210,7 +212,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
+        <div data-aos="zoom-in-right" class="col-lg-4 col-md-6 col-sm-12 pt-sm-5 pt-3">
           <div class="cases-card position-relative overflow-hidden">
             <img class="w-100" src="./assets/images/teaching.png" alt="teaching">
             <div class="px-4">
@@ -226,117 +228,124 @@
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center pt-sm-5 pt-3">
+      <div class="d-flex justify-content-center pt-sm-5 pt-3 mb-sm-3 mb-3">
         <button class="fs-lg fw-bold text-white ff-Nunito btn-get bg-yellow10 ls_9">Load More</button>
       </div>
     </div>
   </section>
   <!-- slider -->
-  <div class="container my-container mx-auto">
-    <h1 class="text_black fw-900 fs-xl text-center mb-0 ff-nunito py-sm-5 px-3 ">Our <span
-        class="heading-line position-relative">Testimonials</span></h1>
-  </div>
-  <div class="d-flex align-items-center justify-content-center">
-    <div class="container my-container">
-      <div class="main">
-        <div class="slider slider-for slick-slider1 ">
-          <div class="d-flex justify-content-center position-relative">
-            <img class="position-absolute wh_204 d-none z_1" src="./assets/images/ring.png" alt="bg-ring-image">
-            <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
-            <img src="./assets/images/slider-img-1.png" alt="slider-img">
+  <section class="bg-whitef7 overflow-hidden">
+    <div class="container my-container mx-auto">
+      <h1 class="text_black fw-900 fs-xl text-center mb-0 ff-nunito pt-sm-5 pt-3 position-relative z-1">Our <span
+          class="heading-line position-relative">Testimonials</span></h1>
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="container my-container">
+        <div class="main">
+          <div class="slider slider-for slick-slider1 ">
+            <div class="d-flex justify-content-center position-relative">
+              <img class="position-absolute wh_204 d-none z_1" src="./assets/images/ring.png" alt="bg-ring-image">
+              <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
+              <img src="./assets/images/slider-img-1.png" alt="slider-img">
+            </div>
+            <div class="d-flex justify-content-center position-relative"><img
+                class="position-absolute wh_204 d-none z_1" src="./assets/images/ring.png" alt="bg-ring-image">
+              <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
+              <img src="./assets/images/slider-img-2.png" alt="slider-img">
+            </div>
+            <div class="d-flex justify-content-center position-relative"><img
+                class="position-absolute wh_204 d-none z_1" src="./assets/images/ring.png" alt="bg-ring-image">
+              <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
+              <img src="./assets/images/slider-img-3.png" alt="slider-img">
+            </div>
+            <div class="d-flex justify-content-center position-relative"><img
+                class="position-absolute wh_204 d-none z_1" src="./assets/images/ring.png" alt="bg-ring-image">
+              <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
+              <img src="./assets/images/slider-img-4.png" alt="slider-img">
+            </div>
+            <div class="d-flex justify-content-center position-relative"><img
+                class="position-absolute wh_204 d-none z_1" src="./assets/images/ring.png" alt="bg-ring-image">
+              <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
+              <img src="./assets/images/slider-img-5.png" alt="slider-img">
+            </div>
+            <div class="d-flex justify-content-center position-relative"><img
+                class="position-absolute wh_204 d-none z_1" src="./assets/images/ring.png" alt="bg-ring-image">
+              <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
+              <img src="./assets/images/slider-img-4.png" alt="slider-img">
+            </div>
+            <div class="d-flex justify-content-center position-relative"><img
+                class="position-absolute wh_204 d-none z_1" src="./assets/images/ring.png" alt="bg-ring-image">
+              <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
+              <img src="./assets/images/slider-img-5.png" alt="slider-img">
+            </div>
           </div>
-          <div class="d-flex justify-content-center position-relative"><img class="position-absolute wh_204 d-none z_1"
-              src="./assets/images/ring.png" alt="bg-ring-image">
-            <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
-            <img src="./assets/images/slider-img-2.png" alt="slider-img">
+          <div class="slider slider-nav py-4">
+            <div>
+              <p class="text_black text-center fw-normal fs-md ff-lora lh_17 ls_36 mw-864 mx-auto">Lorem ipsum dolor
+                sit, amet
+                consectetur
+                adipisicing elit. Consequatur culpa nostrum soluta porro itaque, consequuntur velit
+                distinctio maxime vel vero suscipit sint sequi perspiciatis? Iste obcaecati aliquid ratione?
+                Quisquam corrupti voluptatibus, commodi repellendus facere nihil consequatur numquam quod
+                vel nostrum iste voluptates aliquam iusto perspiciatis, doloremque saepe ad, repellat natus!
+              </p>
+              <p class="text-center fs-lg fw-bold text_black ff-nunito pt-4">Jenny Wilson | <span
+                  class="fs-sm fw-normal text_black ff-lora">Digital Agency</span></p>
+            </div>
+            <div>
+              <p class="text_black text-center fw-normal fs-md ff-lora lh_17 ls_36 mw-864 mx-auto">Lorem ipsum dolor
+                sit, amet
+                consectetur
+                adipisicing elit. Consequatur culpa nostrum soluta porro itaque, consequuntur velit
+                distinctio maxime vel vero suscipit sint sequi perspiciatis? Iste obcaecati aliquid ratione?
+                Quisquam corrupti voluptatibus, commodi repellendus facere nihil consequatur numquam quod
+                vel nostrum iste voluptates aliquam iusto perspiciatis, doloremque saepe ad, repellat natus!
+              </p>
+              <p class="text-center fs-lg fw-bold text_black ff-nunito pt-4">Jenny Wilson | <span
+                  class="fs-sm fw-normal text_black ff-lora">Digital Agency</span></p>
+            </div>
+            <div>
+              <p class="text_black text-center fw-normal fs-md ff-lora lh_17 ls_36 mw-864 mx-auto">Lorem ipsum dolor
+                sit, amet
+                consectetur
+                adipisicing elit. Consequatur culpa nostrum soluta porro itaque, consequuntur velit
+                distinctio maxime vel vero suscipit sint sequi perspiciatis? Iste obcaecati aliquid ratione?
+                Quisquam corrupti voluptatibus, commodi repellendus facere nihil consequatur numquam quod
+                vel nostrum iste voluptates aliquam iusto perspiciatis, doloremque saepe ad, repellat natus!
+              </p>
+              <p class="text-center fs-lg fw-bold text_black ff-nunito pt-4">Jenny Wilson | <span
+                  class="fs-sm fw-normal text_black ff-lora">Digital Agency</span></p>
+            </div>
+            <div>
+              <p class="text_black text-center fw-normal fs-md ff-lora lh_17 ls_36 mw-864 mx-auto">Lorem ipsum dolor
+                sit, amet
+                consectetur
+                adipisicing elit. Consequatur culpa nostrum soluta porro itaque, consequuntur velit
+                distinctio maxime vel vero suscipit sint sequi perspiciatis? Iste obcaecati aliquid ratione?
+                Quisquam corrupti voluptatibus, commodi repellendus facere nihil consequatur numquam quod
+                vel nostrum iste voluptates aliquam iusto perspiciatis, doloremque saepe ad, repellat natus!
+              </p>
+              <p class="text-center fs-lg fw-bold text_black ff-nunito pt-4">Jenny Wilson | <span
+                  class="fs-sm fw-normal text_black ff-lora">Digital Agency</span></p>
+            </div>
+            <div>
+              <p class="text_black text-center fw-normal fs-md ff-lora lh_17 ls_36 mw-864 mx-auto">Lorem ipsum dolor
+                sit, amet
+                consectetur
+                adipisicing elit. Consequatur culpa nostrum soluta porro itaque, consequuntur velit
+                distinctio maxime vel vero suscipit sint sequi perspiciatis? Iste obcaecati aliquid ratione?
+                Quisquam corrupti voluptatibus, commodi repellendus facere nihil consequatur numquam quod
+                vel nostrum iste voluptates aliquam iusto perspiciatis, doloremque saepe ad, repellat natus!
+              </p>
+              <p class="text-center fs-lg fw-bold text_black ff-nunito pt-4">Jenny Wilson | <span
+                  class="fs-sm fw-normal text_black ff-lora">Digital Agency</span></p>
+            </div>
           </div>
-          <div class="d-flex justify-content-center position-relative"><img class="position-absolute wh_204 d-none z_1"
-              src="./assets/images/ring.png" alt="bg-ring-image">
-            <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
-            <img src="./assets/images/slider-img-3.png" alt="slider-img">
-          </div>
-          <div class="d-flex justify-content-center position-relative"><img class="position-absolute wh_204 d-none z_1"
-              src="./assets/images/ring.png" alt="bg-ring-image">
-            <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
-            <img src="./assets/images/slider-img-4.png" alt="slider-img">
-          </div>
-          <div class="d-flex justify-content-center position-relative"><img class="position-absolute wh_204 d-none z_1"
-              src="./assets/images/ring.png" alt="bg-ring-image">
-            <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
-            <img src="./assets/images/slider-img-5.png" alt="slider-img">
-          </div>
-          <div class="d-flex justify-content-center position-relative"><img class="position-absolute wh_204 d-none z_1"
-              src="./assets/images/ring.png" alt="bg-ring-image">
-            <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
-            <img src="./assets/images/slider-img-4.png" alt="slider-img">
-          </div>
-          <div class="d-flex justify-content-center position-relative"><img class="position-absolute wh_204 d-none z_1"
-              src="./assets/images/ring.png" alt="bg-ring-image">
-            <img class="position-absolute d-none groupImg" src="./assets/images/comma-img.png" alt="comma-img">
-            <img src="./assets/images/slider-img-5.png" alt="slider-img">
-          </div>
-        </div>
-        <div class="slider slider-nav py-4">
-          <div>
-            <p class="text_black text-center fw-normal fs-md ff-lora lh_17 ls_36 mw-864 mx-auto">Lorem ipsum dolor sit, amet
-              consectetur
-              adipisicing elit. Consequatur culpa nostrum soluta porro itaque, consequuntur velit
-              distinctio maxime vel vero suscipit sint sequi perspiciatis? Iste obcaecati aliquid ratione?
-              Quisquam corrupti voluptatibus, commodi repellendus facere nihil consequatur numquam quod
-              vel nostrum iste voluptates aliquam iusto perspiciatis, doloremque saepe ad, repellat natus!
-            </p>
-            <p class="text-center fs-lg fw-bold text_black ff-nunito pt-4">Jenny Wilson | <span
-                class="fs-sm fw-normal text_black ff-lora">Digital Agency</span></p>
-          </div>
-          <div>
-            <p class="text_black text-center fw-normal fs-md ff-lora lh_17 ls_36 mw-864 mx-auto">Lorem ipsum dolor sit, amet
-              consectetur
-              adipisicing elit. Consequatur culpa nostrum soluta porro itaque, consequuntur velit
-              distinctio maxime vel vero suscipit sint sequi perspiciatis? Iste obcaecati aliquid ratione?
-              Quisquam corrupti voluptatibus, commodi repellendus facere nihil consequatur numquam quod
-              vel nostrum iste voluptates aliquam iusto perspiciatis, doloremque saepe ad, repellat natus!
-            </p>
-            <p class="text-center fs-lg fw-bold text_black ff-nunito pt-4">Jenny Wilson | <span
-                class="fs-sm fw-normal text_black ff-lora">Digital Agency</span></p>
-          </div>
-          <div>
-            <p class="text_black text-center fw-normal fs-md ff-lora lh_17 ls_36 mw-864 mx-auto">Lorem ipsum dolor sit, amet
-              consectetur
-              adipisicing elit. Consequatur culpa nostrum soluta porro itaque, consequuntur velit
-              distinctio maxime vel vero suscipit sint sequi perspiciatis? Iste obcaecati aliquid ratione?
-              Quisquam corrupti voluptatibus, commodi repellendus facere nihil consequatur numquam quod
-              vel nostrum iste voluptates aliquam iusto perspiciatis, doloremque saepe ad, repellat natus!
-            </p>
-            <p class="text-center fs-lg fw-bold text_black ff-nunito pt-4">Jenny Wilson | <span
-                class="fs-sm fw-normal text_black ff-lora">Digital Agency</span></p>
-          </div>
-          <div>
-            <p class="text_black text-center fw-normal fs-md ff-lora lh_17 ls_36 mw-864 mx-auto">Lorem ipsum dolor sit, amet
-              consectetur
-              adipisicing elit. Consequatur culpa nostrum soluta porro itaque, consequuntur velit
-              distinctio maxime vel vero suscipit sint sequi perspiciatis? Iste obcaecati aliquid ratione?
-              Quisquam corrupti voluptatibus, commodi repellendus facere nihil consequatur numquam quod
-              vel nostrum iste voluptates aliquam iusto perspiciatis, doloremque saepe ad, repellat natus!
-            </p>
-            <p class="text-center fs-lg fw-bold text_black ff-nunito pt-4">Jenny Wilson | <span
-                class="fs-sm fw-normal text_black ff-lora">Digital Agency</span></p>
-          </div>
-          <div>
-            <p class="text_black text-center fw-normal fs-md ff-lora lh_17 ls_36 mw-864 mx-auto">Lorem ipsum dolor sit, amet
-              consectetur
-              adipisicing elit. Consequatur culpa nostrum soluta porro itaque, consequuntur velit
-              distinctio maxime vel vero suscipit sint sequi perspiciatis? Iste obcaecati aliquid ratione?
-              Quisquam corrupti voluptatibus, commodi repellendus facere nihil consequatur numquam quod
-              vel nostrum iste voluptates aliquam iusto perspiciatis, doloremque saepe ad, repellat natus!
-            </p>
-            <p class="text-center fs-lg fw-bold text_black ff-nunito pt-4">Jenny Wilson | <span
-                class="fs-sm fw-normal text_black ff-lora">Digital Agency</span></p>
-          </div>
-        </div>
 
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- footer -->
   <footer>
     <div class="container my-container">
@@ -399,17 +408,33 @@
       </p>
     </div>
   </footer>
+  <!-- back to top -->
+   <!-- backtotop -->
+   <div id="backtotop">
+    <svg height="70" width="70" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 90 112.5" enable-background="new 0 0 90 90" xml:space="preserve">
+<path d="M18.391,39.638c-4.207,4.219-1.926,11.768,5.34,11.773l42.635,0.02c7.266,0.006,9.553-7.545,5.35-11.768L54.078,21.962  c-6.016-6.041-11.879-5.678-17.994-0.041L18.391,39.638z"/>
+<path d="M16.809,66.724v-2.189c0-4.17,3.354-7.529,7.52-7.529h41.443c4.166,0,7.521,3.359,7.521,7.529v2.189  c0,4.172-3.355,7.529-7.521,7.529H24.328C20.162,74.253,16.809,70.896,16.809,66.724z"/>    
+</svg>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-  integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer">
-  </script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
   <script src="./assets/js/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+     AOS.init({
+            duration: 3000,
+            once: true,
+        });
+  </script>
   <script>$('.slider-for').slick({
       centerMode: true,
       autoplay: true,
