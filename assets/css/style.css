@@ -6,11 +6,9 @@
     list-style-type: none !important;
     text-decoration: none !important;
 }
-
 .my-container {
     max-width: 1280px !important;
 }
-
 /* section 1 */
 .bottom-line::after {
     content: '';
@@ -27,7 +25,6 @@
 .z-1 {
     z-index: 1;
 }
-
 .circle {
     position: absolute;
     left: -40px;
@@ -40,11 +37,18 @@
     padding: 9px 14px;
     border: none;
 }
+.digital-btn:hover {
+    background-color: var(--black);
+}
 .coaching-btn {
     border-radius: 5px;
     box-shadow: 0px 10px 40px -12px rgba(30, 30, 30, 0.35);
     padding: 9px 14px;
+    transition: .4s;
     border: none;
+}
+.coaching-btn:hover {
+    background-color: var(--black);
 }
 .mxw-220 {
     max-width: 220px;
@@ -57,17 +61,17 @@
     max-width: 430px;
 }
 /* nav-bar */
-.nav-line::after {  
+.nav-line::after {
     display: flex;
-  content: "";
-  position: absolute;
-  left: 0;
-  z-index: -1;
-  bottom: 4px;
-  height: 4px;
-  width: 100%;
-  transition: .5s;
-  background: var(--yellow4f);
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    bottom: 4px;
+    height: 4px;
+    width: 100%;
+    transition: .5s;
+    background: var(--yellow4f);
 }
 .nav-get-btn {
     border-radius: 5px;
@@ -76,7 +80,7 @@
     transition: .5s;
 }
 .nav-get-btn:hover {
-   background: var(--black);
+    background: var(--black);
 }
 ul {
     padding-left: unset !important;
@@ -103,11 +107,9 @@ ul {
 .cross-6 {
     transition: .4s;
 }
-
 .flow-hidden {
     overflow: hidden;
 }
-
 /* get in touch card */
 .touch-card {
     min-width: 80%;
@@ -135,69 +137,75 @@ textarea {
     border: none;
     padding: 12px 46px;
     border-radius: 5px;
+    transition: .4s;
 }
-.touch-card-position{
+.submit-btn:hover {
+    background-color: var(--black);
+}
+.touch-card-position {
     position: absolute;
     bottom: -30%;
+    top: 48%;
+    z-index: 2;
 }
 /* footer */
 footer div ul li a>svg path {
     transition: all 200ms linear;
 }
-
 footer div ul li a:hover>svg path {
-    fill: #fACA10;
+    fill: var(--yello10);
 }
-.footer-line::after {  
-  display: flex;
-  content: "";
-  position: absolute;
-  left: 0;
-  z-index: -1;
-  bottom: 4px;
-  height: 4px;
-  width: 100%;
-  transition: .5s;
-  background: #fcdb4f;
+
+.footer-line::after {
+    display: flex;
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    bottom: 4px;
+    height: 4px;
+    width: 100%;
+    transition: .5s;
+    background: var(--yellow4f);
 }
+
 /* backtotop */
-#backtotop{
+#backtotop {
     transition: .3s;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 5;
+    z-index: 2;
     cursor: pointer;
     animation: float 2s linear infinite;
 }
-.display_none{
+.display_none {
     display: none;
-  }
-  .display_block{
+}
+.display_block {
     display: block;
-  }
-  /* preloader */
-.loader_bg{
+}
+/* preloader */
+.loader_bg {
     position: fixed;
     z-index: 999999;
     background: #fff;
     width: 100%;
     height: 100%;
 }
-.loader{
+.loader {
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%,-30%);
+    transform: translate(-50%, -30%);
 }
-.loader-img{
+.loader-img {
     position: absolute;
     top: 60%;
-    left: 43%;
-    transform: translate(-50%,-50%);
+    left: 20%;
+    /* transform: translate(-50%,-50%); */
     animation: updown 2s linear infinite;
 }
-
 /* media screens */
 @media (max-width:992px) {
     label[id="menuIcon"] {
@@ -239,40 +247,59 @@ footer div ul li a:hover>svg path {
     }
 }
 @media (min-width:768px) {
-    .touch-card{
+    .touch-card {
         min-width: 80%;
     }
+    .loader-img {
+        position: absolute;
+        top: 60%;
+        left: 70%;
+    }
 }
-@media (min-width:576px){
-   .touch-card{
-    padding-left: 80px;
-    padding-right: 75px;
-    padding-top:60px;
-    padding-bottom: 60px;
-   }
+@media (min-width:576px) {
+    .touch-card {
+        padding-left: 80px;
+        padding-right: 75px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        position: absolute;
+        bottom: -30%;
+        top: 15%;
+        z-index: 2;
+    }
+    .loader-img {
+        position: absolute;
+        top: 60%;
+        left: 30%;
+    }
+}
+@media (min-width:992px) {
+    .loader-img {
+        position: absolute;
+        top: 60%;
+        left: 43%;
+    }
 }
 /* back-to-top keyframes */
 @keyframes float {
     0% {
-        transform: translatey(0) scale(1);       
+        transform: translatey(0) scale(1);
     }
     50% {
-        transform: translatey(-10px) scale(1.2);       
+        transform: translatey(-10px) scale(1.2);
     }
     100% {
-        transform: translatey(0) scale(1);        
-    }
-}
+        transform: translatey(0) scale(1);
+    }}
 /* preloader's keyframe */
 @keyframes updown {
     0% {
-        transform: translatey(0) scale(1);       
+        transform: translatey(0) scale(1);
     }
     50% {
-        transform: translatey(-10px) scale(1.2);       
+        transform: translatey(-10px) scale(1.2);
     }
     100% {
-        transform: translatey(0) scale(1);        
+        transform: translatey(0) scale(1);
     }
 }
-
