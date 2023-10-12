@@ -12,9 +12,6 @@
     max-width: 1280px;
 }
 
-
-
-
  
 /* button */
 .nav-get-btn{
@@ -262,6 +259,10 @@ ul {
 .mw-864{
     max-width: 864px;
 }
+.mw-437{
+    max-width: 437px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .z_1 {
     z-index: -1;
@@ -290,7 +291,7 @@ ul {
     font-size: 18px !important;
     line-height: 20px;
     position: absolute;
-    top: 0;
+    top: -179% !important;
     left: 0;
     width: 20px;
     height: 20px;
@@ -298,7 +299,7 @@ ul {
     content: "" !important;
     text-align: center;
     opacity: 0.25;
-    background-color: var(--yellow4F) !important;
+    background-color: var(--yellow4f) !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -308,8 +309,8 @@ ul {
 }
 
 .groupImg {
-    right: 23%;
-    bottom: -5%;
+    right: 9%;
+    bottom: 11%;
 }
 
 .slick-slider1 {
