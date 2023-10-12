@@ -1,5 +1,4 @@
 @import url("./root.css");
-
 * {
     padding: 0;
     margin: 0;
@@ -25,7 +24,6 @@
     left: 0;
     z-index: -1;
 }
-
 .z-1 {
     z-index: 1;
 }
@@ -36,62 +34,91 @@
     bottom: 17px;
     z-index: -1;
 }
-
 .digital-btn {
     border-radius: 5px;
     box-shadow: 0px 10px 40px -12px rgba(30, 30, 30, 0.35);
     padding: 9px 14px;
     border: none;
 }
-
 .coaching-btn {
     border-radius: 5px;
     box-shadow: 0px 10px 40px -12px rgba(30, 30, 30, 0.35);
     padding: 9px 14px;
     border: none;
 }
-
 .mxw-220 {
     max-width: 220px;
 }
-
 /*---------------------------- digital-journey-page----------------------------- */
 .text-shadow-4 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .mxw-430 {
     max-width: 430px;
+}
+/* nav-bar */
+.nav-get-btn {
+    border-radius: 5px;
+    box-shadow: 0px 10px 40px -12px rgba(250, 202, 16, 0.35);
+    padding: 9px 21px;
+    transition: .5s;
+}
+.nav-get-btn:hover {
+   background: var(--black);
+}
+ul {
+    padding-left: unset !important;
+}
+.cross-1 {
+    rotate: 45deg;
+    transition: .4s;
+}
+.cross-2 {
+    position: relative;
+    transition: .4s;
+    top: -80%;
+    rotate: -45deg;
+}
+.cross-3 {
+    display: none !important;
+}
+.cross-4 {
+    transition: .4s;
+}
+.cross-5 {
+    transition: .4s;
+}
+.cross-6 {
+    transition: .4s;
+}
+
+.flow-hidden {
+    overflow: hidden;
 }
 
 /* get in touch card */
 .touch-card {
-    min-width: 920px;
-    padding-left: 80px;
-    padding-right: 75px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    min-width: 80%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 10px;
     max-width: 936px;
     border-radius: 15px;
     box-shadow: 0px 19px 34px 14px rgba(0, 0, 0, 0.06);
-
 }
-
 input {
     outline: unset !important;
     border: unset;
 }
-
 textarea {
     border: unset;
     outline: unset;
     resize: none !important;
 }
-
 .input-line {
     border-bottom: 2px solid var(--greyA5);
 }
-
 .submit-btn {
     border: none;
     padding: 12px 46px;
@@ -101,8 +128,6 @@ textarea {
     position: absolute;
     bottom: -30%;
 }
-
-
 /* footer */
 footer div ul li a>svg path {
     transition: all 200ms linear;
@@ -112,14 +137,130 @@ footer div ul li a:hover>svg path {
     fill: #fACA10;
 }
 .footer-line::after {  
-    display: flex;
+  display: flex;
   content: "";
   position: absolute;
   left: 0;
   z-index: -1;
   bottom: 4px;
-  height: 6px;
-  width: 47px;
+  height: 4px;
+  width: 100%;
   transition: .5s;
   background: #fcdb4f;
 }
+/* backtotop */
+#backtotop{
+    transition: .3s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+    cursor: pointer;
+    animation: float 2s linear infinite;
+}
+.display_none{
+    display: none;
+  }
+  .display_block{
+    display: block;
+  }
+  /* preloader */
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+}
+.loader-img{
+    position: absolute;
+    top: 60%;
+    left: 43%;
+    transform: translate(-50%,-50%);
+    animation: updown 2s linear infinite;
+}
+
+/* media screens */
+@media (max-width:992px) {
+    label[id="menuIcon"] {
+        width: 30px;
+        height: 24px;
+        cursor: pointer;
+        display: flex;
+        position: absolute;
+        right: 2%;
+        top: 12%;
+        justify-content: space-between;
+        flex-direction: column;
+        z-index: 5;
+        align-items: center;
+    }
+    label[id="menuIcon"]>span {
+        width: 100%;
+        height: 5px;
+        background: black;
+    }
+    .nav-box {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        position: fixed;
+        opacity: 1;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        background: #A5A5A5;
+        z-index: 3;
+        box-shadow: 0px 0px 19px 9px rgba(0, 0, 0, 0.10);
+        transition: all 500ms linear;
+    }
+    .fix-lft {
+        left: 0;
+    }
+}
+@media (min-width:768px) {
+    .touch-card{
+        min-width: 80%;
+    }
+}
+@media (min-width:576px){
+   .touch-card{
+    padding-left: 80px;
+    padding-right: 75px;
+    padding-top:60px;
+    padding-bottom: 60px;
+   }
+}
+/* back-to-top keyframes */
+@keyframes float {
+    0% {
+        transform: translatey(0) scale(1);       
+    }
+    50% {
+        transform: translatey(-10px) scale(1.2);       
+    }
+    100% {
+        transform: translatey(0) scale(1);        
+    }
+}
+/* preloader's keyframe */
+@keyframes updown {
+    0% {
+        transform: translatey(0) scale(1);       
+    }
+    50% {
+        transform: translatey(-10px) scale(1.2);       
+    }
+    100% {
+        transform: translatey(0) scale(1);        
+    }
+}
+

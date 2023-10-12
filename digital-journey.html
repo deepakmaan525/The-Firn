@@ -5,22 +5,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Firn| Contact Us</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="sec-flow">
+     <!-- nav-section -->
+  <nav class="py-sm-4 py-3 bg-whitef7">
+    <div class="container my-container">
+      <div class="d-flex align-items-center justify-content-between position-relative">
+        <div>
+          <img src="./assets/images/logo.png" alt="logo">
+        </div>
+        <label id="menuIcon">
+          <span class="cross-4"></span>
+          <span class="cross-5"></span>
+          <span class="cross-6"></span>
+        </label>
+        <ul class="d-flex align-items-center justify-content-center gap-4 mb-0 nav-box" id="nav-bar">
+          <li><a class="home fs-lg fw-bold text_black ls-9" href="#home">Home</a></li>
+          <li><a class="solution fs-lg fw-bold text_black ls-9" href="#solution">Solutions
+            </a></li>
+          <li><a class="cases fs-lg fw-bold text_black ls-9 " href="#cases">Cases</a></li>
+          <li><a class="about fs-lg fw-bold text_black ls-9 " href="#about">About Us</a></li>
+          <li><a class="blog fs-lg fw-bold text_black ls-9" href="#blog">BLOG</a>
+          </li>
+          <li><a class="contact fs-lg fw-bold text_black ls-9 " href="#contact">Contact Us</a></li>
+          <li><a class="touch nav-get-btn bg-yellow10 fs-lg fw-bold ls-9 text-white" href="#touch">Get in
+              Touch</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <section class="bg-whitef7">
         <div class="container my-container">
-            <div class="row">
-                <div class="col-5 d-flex flex-column justify-content-center">
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-lg-5  d-flex flex-column justify-content-center">
                     <h1 class="mb-0 fs-xxl text_black fw-900 text-shadow-4">Our Digital Journey</h1>
                     <p class="mb-0 text_black mxw-430 fs-lg fw-normal">Lorem Ipsum is simply dummy text of the printing
                         and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy.</p>
                 </div>
-                <div class="col-7">
+                <div class="col-lg-7 ">
                     <img class="w-100" src="./assets/images/peoples-with-small-pices of-paper.png"
                         alt="peoples-with-small-pices of-paper">
                 </div>
@@ -29,12 +57,12 @@
     </section>
     <!-- section-2 -->
     <section>
-        <div class="container my-container">
-            <div class="row">
-                <div class="col-6">
+        <div class="container my-container pt-sm-5 pt-3">
+            <div class="row pt-sm-5">
+                <div class="col-lg-6">
                     <img class="w-100" src="./assets/images/four-people-discussion.png" alt="four-people-discussion">
                 </div>
-                <div class="col-6 d-flex flex-column justify-content-center">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
                     <h2 class="text_black fs-xxl fw-bold mb-0">Lorem <span
                             class="bottom-line position-relative">Ipsum</span></h2>
                     <p class="mb-0 text_black fw-normal fs-lg">Lorem Ipsum is simply dummy text of the printing and
@@ -60,30 +88,30 @@
         </section>
         <!-- get in touch -->
         <section class="pb-5">
-            <div class="container my-container pb-5 d-flex justify-content-center">
+            <div class="container my-container pb-sm-5 pb-2 d-flex justify-content-center">
                 <div class="touch-card bg-white  touch-card-position">
                     <h2 class="text_black fs-xxl fw-bold mb-0 text-center">Get In<span       
                             class="bottom-line position-relative">Touch</h2>
                     <form action="">
-                        <div class="d-flex gap-5 pt-5">
-                            <div class="d-flex flex-column w-50 position-relative">
+                        <div class="d-flex gap-sm-5 gap-2 pt-sm-5 pt-2 flex-column flex-lg-row">
+                            <div class="d-flex flex-column w-100 w-sm-50 position-relative">
                                 <label for="Name" class="fs-md fw-normal text_greyA5">Name</label>
                                 <input class="fs-lg fw-normal text_black input-line pb-2 " type="text" id="Name"
                                     placeholder="Name" value="Lorem Ipusum">
                             </div>
-                            <div class="d-flex flex-column w-50 position-relative">
+                            <div class="d-flex flex-column w-100 w-sm-50 position-relative">
                                 <label for="Email" class="fs-md fw-normal text_greyA5">Email</label>
                                 <input class="fs-lg fw-normal text_black input-line pb-2 " type="text" id="Email"
                                     placeholder="Email" value="LoremIpusum@mail.com">
                             </div>
                         </div>
-                        <div class="d-flex flex-column w-100 pt-5">
+                        <div class="d-flex flex-column w-100 pt-sm-5 pt-2">
                             <label for="Message" class="fs-md fw-normal text_greyA5">Message</label>
                             <textarea class="fs-lg fw-normal text_black input-line pb-2" id="Message"
                                 placeholder="Message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s.</textarea>
                         </div>
                     </form>
-                    <div class="text-center pt-5"><button class="submit-btn bg-yellow10 text-white fs-lg fw-bold">Submit</button></div>
+                    <div class="text-center pt-sm-5 pt-3"><button class="submit-btn bg-yellow10 text-white fs-lg fw-bold">Submit</button></div>
                 </div>
             </div>
         </section>
@@ -91,18 +119,18 @@
     <!-- footer -->
     <footer class="pt-5 position-relative">
         <div class="container my-container pt-5">
-          <div class="d-flex justify-content-center pt-5 ">
+          <div class="d-flex justify-content-center pt-sm-5 pt-3 ">
             <img class="pt-5" src="./assets/images/footer-img.png" alt="footer-img">
           </div>
-          <div class="d-flex justify-content-center gap-5 pt-5 flex-wrap">
-            <p class="fs-lg fw-bold text_black ls_9 position-relative footer-line">Home</p>
-            <p class="fs-lg fw-bold text_black ls_9 ">Solutions</p>
-            <p class="fs-lg fw-bold text_black ls_9">Cases</p>
-            <p class="fs-lg fw-bold text_black ls_9">About Us</p>
-            <p class="fs-lg fw-bold text_black ls_9">Blog</p>
-            <p class="fs-lg fw-bold text_black ls_9">Contact Us</p>
+          <div class="d-flex justify-content-center gap-sm-5 gap-3 pt-sm-5 pt-3 flex-wrap">
+            <p class="fs-lg fw-bold text_black ls_9 mb-0">Home</p>
+            <p class="fs-lg fw-bold text_black ls_9  mb-0">Solutions</p>
+            <p class="fs-lg fw-bold text_black ls_9 mb-0">Cases</p>
+            <p class="fs-lg fw-bold text_black ls_9 mb-0">About Us</p>
+            <p class="fs-lg fw-bold text_black ls_9 mb-0">Blog</p>
+            <p class="fs-lg fw-bold text_black ls_9 mb-0 position-relative footer-line">Contact Us</p>
           </div>
-          <ul class="d-flex justify-content-center gap-5 align-items-center pt-5 flex-wrap">
+          <ul class="d-flex justify-content-center gap-5 align-items-center pt-sm-5 pt-3 flex-wrap mb-0">
             <li><a href="https://www.facebook.com/" target="_blank"><svg width="10" height="20" viewBox="0 0 10 20"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -145,12 +173,21 @@
                 </svg>
               </a></li>
           </ul>
-          <p class="fs-sm-1 fw-normal ff-nunito greyA5 ls_3 text-center pt-5">Copyrights ©2020 Thefirm. All Right Reserved
+          <p class="fs-sm-1 fw-normal ff-nunito greyA5 ls_3 text-center pt-sm-5 pt-3 mb-0">Copyrights ©2020 Thefirm. All Right Reserved
           </p>
       </footer>
+       <!-- backtotop -->
+       <div id="backtotop">
+        <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 90 112.5" enable-background="new 0 0 90 90" xml:space="preserve">
+    <path d="M18.391,39.638c-4.207,4.219-1.926,11.768,5.34,11.773l42.635,0.02c7.266,0.006,9.553-7.545,5.35-11.768L54.078,21.962  c-6.016-6.041-11.879-5.678-17.994-0.041L18.391,39.638z"/>
+    <path d="M16.809,66.724v-2.189c0-4.17,3.354-7.529,7.52-7.529h41.443c4.166,0,7.521,3.359,7.521,7.529v2.189  c0,4.172-3.355,7.529-7.521,7.529H24.328C20.162,74.253,16.809,70.896,16.809,66.724z"/>    
+</svg>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+        <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

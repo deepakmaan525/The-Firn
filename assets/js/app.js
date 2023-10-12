@@ -73,15 +73,17 @@ touch.addEventListener("click", function () {
     cross6.classList.toggle("cross-3");
 });
 
-
-
-
-let svg = document.getElementById('svg')
-let search = document.getElementById('search')
-
-if (search.value == "" ){
-    svg.classList.add.display = 'none'
-}
-else{
-    svg.classList.add.display = 'block'
-};
+// backToTop
+let backToTop = document.getElementById('backtotop')
+ backToTop.addEventListener("click", function () {
+ window.scrollTo(0, 0)
+});
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 500) {
+        backToTop.classList.remove('display_none');
+        backToTop.classList.add('display_block');
+    } else {
+        backToTop.classList.remove('display_block');
+        backToTop.classList.add('display_none');
+    }
+});
