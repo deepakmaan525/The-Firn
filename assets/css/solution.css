@@ -5,6 +5,53 @@
     list-style-type: none;
     text-decoration: none;
   }
+  /* nav-section */
+.nav-get-btn {
+    border-radius: 5px;
+    box-shadow: 0px 10px 40px -12px rgba(250, 202, 16, 0.35);
+    padding: 9px 21px;
+    transition: .5s;
+}
+.nav-get-btn:hover {
+   background: var(--black);
+}
+
+ul {
+    padding-left: unset !important;
+}
+
+.cross-1 {
+    rotate: 45deg;
+    transition: .4s;
+}
+
+.cross-2 {
+    position: relative;
+    transition: .4s;
+    top: -80%;
+    rotate: -45deg;
+}
+
+.cross-3 {
+    display: none !important;
+}
+
+.cross-4 {
+    transition: .4s;
+}
+
+.cross-5 {
+    transition: .4s;
+}
+
+.cross-6 {
+    transition: .4s;
+}
+
+.flow-hidden {
+    overflow: hidden;
+}
+/*section3*/
   .py-80 {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -86,6 +133,30 @@
       border-radius: 50%;
       opacity: 0.3;
     }
+    .py-25{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    /* footer-section */
+.footer-line::after {  
+    display: flex;
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  bottom: 4px;
+  height: 6px;
+  width: 47px;
+  transition: .5s;
+  background: #fcdb4f;
+}
+
+footer div ul li a > svg path{
+    transition: all 200ms linear;
+   }
+   footer div ul li a:hover > svg path{
+    fill: #fACA10 ;
+   }
   @media (min-width:576px) {
       .solution-card-para {
           line-height: 176%;
@@ -94,5 +165,60 @@
           line-height: 176%;
         }
   }
-  
+  @media (min-width:768px) {
+    .py-25{
+        padding-top: none;
+        padding-bottom: none;
+    }
+    .py-md-100{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .py-md-80{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+  @media (max-width:992px) {
+    label[id="menuIcon"] {
+        width: 30px;
+        height: 24px;
+        cursor: pointer;
+        display: flex;
+        position: absolute;
+        right: 2%;
+        top: 12%;
+        justify-content: space-between;
+        flex-direction: column;
+        z-index: 5;
+        align-items: center;
+    }
+
+    label[id="menuIcon"]>span {
+        width: 100%;
+        height: 5px;
+        background: black;
+    }
+
+    .nav-box {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        position: fixed;
+        opacity: 1;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        background: #A5A5A5;
+        z-index: 3;
+        box-shadow: 0px 0px 19px 9px rgba(0, 0, 0, 0.10);
+        transition: all 500ms linear;
+    }
+
+    .fix-lft {
+        left: 0;
+    }
+}
   
